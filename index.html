@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./javascript/jquery.min.js"></script>
+</head>
+<body class="container">
+    <div class="chip" id="chip">
+      <div class="loader" id="loader"></div>
+      <div class="row">
+        <div class="col-5" id="weather-icon"></div>
+        <div class="col-7">
+          <div class="row"> 
+            <div class="col-8">
+              <h1 class="display-3" id="temp"></h1>
+            </div>
+            <div class="col-2">
+                <i class='wi wi-celsius unit active' id="btnCelsius" onclick="getCelsius()" style='font-size: 3em'></i>
+            </div>
+            <div class="col-2">
+                <i class='wi wi-fahrenheit unit' onclick="getFahrenheit()" id="btnFahrenheit" style='font-size: 3em'></i>
+            </div>
+          </div>
+          <div class="row">
+              <h6 id="description"></h6>
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col text-center">
+          <h3 id="place"></h3>
+          <h3 id="dateTime"></h3>
+        </div>
+      </div>
+      <div id="otherDetails" class="row">
+        <div class="col text-center">
+          <i class='wi wi-humidity' style='font-size: 3em'></i>
+          <h4 id="humidity"></h4>
+        </div>
+        <div class="col text-center">
+          <i class='wi wi-strong-wind' style='font-size: 3em'></i>
+          <h4 id="windSpeed"></h4>
+        </div>
+        <div class="col text-center">
+          <i class='wi wi-thermometer' style='font-size: 3em'></i>
+          <h4 id="celsius"></h4>
+        </div>
+      </div>
+      <div class="row">
+            <div class="col text-center">
+                <i class='wi wi-sunrise' style='font-size: 3em'></i>
+                <h4 id="sunrise"></h4>
+            </div>
+            <div class="col text-center">
+                <i class='wi wi-sunset' style='font-size: 3em'></i>
+                <h4 id="sunset"></h4>
+            </div>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" id="search" name="search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" onclick="search()"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+          </div>
+      </div>
+    </div>
+   <script src="./javascript/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+
+
+body {
+  background: #232840;
+  color: #fff;
+}
+
+.unit {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+.unit:hover{
+  cursor: pointer;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+.chip {
+  width: 500px;
+  background: #131521;
+  padding: 50px;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.display-3,
+h3,
+h4,
+h6,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#weather-icon,
+#btnFahrenheit {
+  color: #2d314a;
+}
+
+#description {
+  position: relative;
+  top: -15px;
+  left: 20px;
+}
+
+#otherDetails {
+  margin-top: 20px;
+  color: #2d314a;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
